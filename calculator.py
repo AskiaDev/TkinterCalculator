@@ -120,7 +120,7 @@ zero.grid(row=4, column=0, sticky='nsew', padx=5, pady=5)
 dot = Button(buttonframe, text='.', font=('Arial', 12), command=lambda: add_to_calculation('.'))
 dot.grid(row=4, column=1, sticky='nsew', padx=5, pady=5)
 
-mul = Button(buttonframe, text='x', font=('Arial', 12))
+mul = Button(buttonframe, text='*', font=('Arial', 12), command=lambda: add_to_calculation('*'))
 mul.grid(row=4, column=2, sticky='nsew', padx=5, pady=5)
 
 equal = Button(buttonframe, text='=', font=('Arial', 12), command=evaluate_calculation)
